@@ -1,0 +1,11 @@
+2020-10-15 17:55:32  [DEBUG ] com.ocpsoft.pretty.faces.config.reload.PrettyConfigReloader.isDevelopmentModeActive(PrettyConfigReloader.java:132):132 - Detector DefaultDevelopmentModeDetector returned: null
+2020-10-15 17:55:32  [DEBUG ] com.ocpsoft.pretty.faces.config.reload.PrettyConfigReloader.isDevelopmentModeActive(PrettyConfigReloader.java:132):132 - Detector JSF2DevelopmentModeDetector returned: false
+2020-10-15 17:55:32  [DEBUG ] com.ocpsoft.pretty.faces.config.reload.PrettyConfigReloader.reloadIfNecessary(PrettyConfigReloader.java:69):69 - No development mode detected. Configuration reloading gets disabled.
+2020-10-15 17:55:33  [INFO  ] tn.esprit.spring.services.EmployeServiceImpl.addOrUpdateEmploye(EmployeServiceImpl.java:45):45 - In  addOrUpdateEmploye : 
+2020-10-15 17:55:33  [INFO  ] tn.esprit.spring.services.EmployeServiceImpl.addOrUpdateEmploye(EmployeServiceImpl.java:47):47 - Out of addOrUpdateEmploye.
+2020-10-15 17:57:02  [INFO  ] tn.esprit.spring.services.EmployeServiceImpl.getEmployePrenomById(EmployeServiceImpl.java:108):108 - In getEmployePrenomById where id= 2
+2020-10-15 17:57:02  [INFO  ] tn.esprit.spring.services.EmployeServiceImpl.getEmployePrenomById(EmployeServiceImpl.java:110):110 - Name_user returned :amara
+2020-10-15 18:28:12  [INFO  ] tn.esprit.spring.services.EmployeServiceImpl.addOrUpdateEmploye(EmployeServiceImpl.java:45):45 - In  addOrUpdateEmploye : 
+2020-10-15 18:28:12  [INFO  ] tn.esprit.spring.services.EmployeServiceImpl.addOrUpdateEmploye(EmployeServiceImpl.java:47):47 - Out of addOrUpdateEmploye.
+2020-10-15 18:29:21  [INFO  ] tn.esprit.spring.services.EmployeServiceImpl.addOrUpdateEmploye(EmployeServiceImpl.java:45):45 - In  addOrUpdateEmploye : 
+2020-10-15 18:29:22  [INFO  ] tn.esprit.spring.services.EmployeServiceImpl.addOrUpdateEmploye(EmployeServiceImpl.java:47):47 - Out of addOrUpdateEmploye.

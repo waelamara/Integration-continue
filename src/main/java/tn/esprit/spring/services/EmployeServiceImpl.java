@@ -40,7 +40,9 @@ public class EmployeServiceImpl implements IEmployeService {
 
 	@Override
 	public int addOrUpdateEmploye(Employe employe) {
+		l.info("In addOrUpdateEmploye");
 		employeRepository.save(employe);
+		l.info("Out addOrUpdateEmploye");
 		return employe.getId();
 	}
 
@@ -102,7 +104,9 @@ public class EmployeServiceImpl implements IEmployeService {
 	}
 
 	public String getEmployePrenomById(int employeId) {
+		l.info("In getEmployePrenomById where id= "+employeId);
 		Employe employeManagedEntity = employeRepository.findById(employeId).get();
+		l.info("Name_user returned :"+employeManagedEntity.getPrenom());
 		return employeManagedEntity.getPrenom();
 	}
 	 
