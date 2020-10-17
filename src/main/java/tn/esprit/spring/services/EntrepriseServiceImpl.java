@@ -24,12 +24,16 @@ public class EntrepriseServiceImpl implements IEntrepriseService {
 	DepartementRepository deptRepoistory;
 	
 	public int ajouterEntreprise(Entreprise entreprise) {
+		l.info("In ajouterEntreprise");
 		entrepriseRepoistory.save(entreprise);
+		l.info("Out ajouterEntreprise");
 		return entreprise.getId();
 	}
 
 	public int ajouterDepartement(Departement dep) {
+		l.info("In ajouterDepartement");
 		deptRepoistory.save(dep);
+		l.info("Out ajouterDepartement");
 		return dep.getId();
 	}
 	
@@ -41,16 +45,17 @@ public class EntrepriseServiceImpl implements IEntrepriseService {
 				//Rappel : Dans une relation oneToMany le mappedBy doit etre du cote one.
 				Entreprise entrepriseManagedEntity = entrepriseRepoistory.findById(entrepriseId).get();
 				Departement depManagedEntity = deptRepoistory.findById(depId).get();
-				
+				l.info("In affecterDepartementAEntreprise");
 				depManagedEntity.setEntreprise(entrepriseManagedEntity);
 				deptRepoistory.save(depManagedEntity);
-		
+				l.info("Out affecterDepartementAEntreprise");
 	}
 	
 	public List<String> getAllDepartementsNamesByEntreprise(int entrepriseId) {
 		Entreprise entrepriseManagedEntity = entrepriseRepoistory.findById(entrepriseId).get();
 		List<String> depNames = new ArrayList<>();
 		for(Departement dep : entrepriseManagedEntity.getDepartements()){
+			l.info("DepartementsNames++++:" +dep.getName());
 			depNames.add(dep.getName());
 		}
 		
@@ -59,17 +64,26 @@ public class EntrepriseServiceImpl implements IEntrepriseService {
 
 	@Transactional
 	public void deleteEntrepriseById(int entrepriseId) {
+		l.info("In deleteEntrepriseById");
 		entrepriseRepoistory.delete(entrepriseRepoistory.findById(entrepriseId).get());	
+		l.info("Out deleteEntrepriseById");
 	}
 
 	@Transactional
 	public void deleteDepartementById(int depId) {
-		deptRepoistory.delete(deptRepoistory.findById(depId).get());	
+		l.info("In deleteDepartementById");
+		deptRepoistory.delete(deptRepoistory.findById(depId).get());
+		l.info("Out deleteDepartementById");
 	}
 
 
 	public Entreprise getEntrepriseById(int entrepriseId) {
-		return entrepriseRepoistory.findById(entrepriseId).get();	
+		l.info("In getEntrepriseById where id= "+entrepriseId);
+		//return entrepriseRepoistory.findById(entrepriseId).get();
+		Entreprise e = entrepriseRepoistory.findById(entrepriseId).get();
+		l.info("Name_enterprise returned :"+e.getName());
+		return e;
+		
 	}
 
 }
