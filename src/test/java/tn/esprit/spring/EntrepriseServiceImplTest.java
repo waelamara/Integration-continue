@@ -33,4 +33,10 @@ public class EntrepriseServiceImplTest {
 		// if there are 5 users in DB : 
 		assertEquals(2, listNamesEntreprise.size());
 	}
+	@Test
+	public void testGetEntrepriseById()throws ParseException  {
+		Entreprise e = entrepriseServiceImpl.getEntrepriseById(1);
+		assertEquals(1L, e.getId());
+	}
+	
 }
