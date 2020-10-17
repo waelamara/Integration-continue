@@ -3,6 +3,7 @@ package tn.esprit.spring;
 import static org.junit.Assert.assertEquals;
 
 import java.text.ParseException;
+import java.util.List;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,5 +26,11 @@ public class EntrepriseServiceImplTest {
 		Entreprise e = new Entreprise("Ste Lassoued", "informatique");
 		int id =entrepriseServiceImpl.ajouterEntreprise(e) ;
 		assertEquals(e.getId(), id);
+	}
+	@Test
+	public void testGetAllDepartementsNamesByEntreprise()throws ParseException  {
+		List<String> listNamesEntreprise = entrepriseServiceImpl.getAllDepartementsNamesByEntreprise(1);
+		// if there are 5 users in DB : 
+		assertEquals(2, listNamesEntreprise.size());
 	}
 }
