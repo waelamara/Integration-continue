@@ -1,19 +1,19 @@
 package tn.esprit.spring.config;
 
-import java.io.IOException;
+import tn.esprit.spring.controller.ControllerEmployeImpl;
 
-import javax.servlet.Filter;
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
+import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import tn.esprit.spring.controller.ControllerEmployeImpl;
+import java.io.IOException;
 
 
 public class LoginFilter implements Filter {
+
+	@Override
+	public void init(FilterConfig filterConfig) throws ServletException {
+
+	}
 
 	@Override
 	public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
@@ -28,6 +28,11 @@ public class LoginFilter implements Filter {
 		{ filterChain.doFilter(servletRequest, servletResponse);} 
 		
 		else {httpServletResponse.sendRedirect(httpServletRequest.getContextPath() + "/login.jsf" );}
+	}
+
+	@Override
+	public void destroy() {
+
 	}
 
 }

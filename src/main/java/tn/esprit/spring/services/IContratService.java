@@ -1,8 +1,8 @@
 package tn.esprit.spring.services;
 
-import java.util.List;
-
 import tn.esprit.spring.entities.Contrat;
+
+import java.util.List;
 
 
 public interface IContratService {

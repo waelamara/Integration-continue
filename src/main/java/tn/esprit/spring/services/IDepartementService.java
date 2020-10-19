@@ -1,8 +1,8 @@
 package tn.esprit.spring.services;
 
-import java.util.List;
-
 import tn.esprit.spring.entities.Departement;
+
+import java.util.List;
 
 
 public interface IDepartementService {
