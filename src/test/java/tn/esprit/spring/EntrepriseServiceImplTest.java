@@ -26,7 +26,7 @@ public class EntrepriseServiceImplTest {
 		Entreprise e = new Entreprise("Ste Lassoued", "informatique");
 		int id =entrepriseServiceImpl.ajouterEntreprise(e) ;
 		assertEquals(e.getId(), id);
-	}
+	} 
 	@Test
 	public void testGetAllDepartementsNamesByEntreprise()throws ParseException  {
 		List<String> listNamesEntreprise = entrepriseServiceImpl.getAllDepartementsNamesByEntreprise(1);
