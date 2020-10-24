@@ -47,4 +47,11 @@ public class EmployeServiceImplTest {
 		Employe empUpdateted =iEmployeService.mettreAjourEmailByEmployeId("nouveau@email.test",empAdded.getId());
 		assertNotEquals(empAdded.getEmail(),empUpdateted.getEmail());
 	}
+
+	@Test
+	public void testGetAllEmployes(){
+		assertEquals(6,iEmployeService.getAllEmployes().size());
+	}
+
+
 }

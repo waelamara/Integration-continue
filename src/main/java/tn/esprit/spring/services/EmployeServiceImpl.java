@@ -19,7 +19,7 @@ import java.util.List;
 
 @Service
 public class EmployeServiceImpl implements IEmployeService {
-	private static final Logger l = LogManager.getLogger(IEmployeService.class);
+	private static final Logger l = LogManager.getLogger(EmployeServiceImpl.class);
 	@Autowired
 	EmployeRepository employeRepository;
 	@Autowired
@@ -45,7 +45,7 @@ public class EmployeServiceImpl implements IEmployeService {
 		return employe;
 	}
 
-
+	@Override
 		public Employe mettreAjourEmailByEmployeId(String email, int employeId) {
 		l.info("In mettreAjourEmailByEmployeId");
 		Employe employe = employeRepository.findById(employeId).get();

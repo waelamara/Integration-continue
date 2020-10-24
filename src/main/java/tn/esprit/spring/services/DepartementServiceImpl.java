@@ -12,7 +12,7 @@ import java.util.List;
 
 @Service
 public class DepartementServiceImpl implements IDepartementService {
-	private static final Logger l = LogManager.getLogger(IDepartementService.class);
+	private static final Logger l = LogManager.getLogger(DepartementServiceImpl.class);
 
 	@Autowired
 	DepartementRepository deptRepoistory;

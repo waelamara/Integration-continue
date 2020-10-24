@@ -14,7 +14,7 @@ import java.util.List;
 
 @Service
 public class ContratServiceImpl implements IContratService {
-	private static final Logger l = LogManager.getLogger(IContratService.class);
+	private static final Logger l = LogManager.getLogger(ContratServiceImpl.class);
 
 	@Autowired
 	ContratRepository contratRepository;
