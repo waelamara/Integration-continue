@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: integration-continue
 Implementation-Version: 1.0
-Built-By: nouss
+Built-By: waelb
 Implementation-Vendor-Id: tn.esprit.spring
-Build-Jdk: 1.8.0_251
+Build-Jdk: 1.8.0_201
 Implementation-URL: https://spring.io/projects/spring-boot/integration
  -continue
 Created-By: Maven Integration for Eclipse
