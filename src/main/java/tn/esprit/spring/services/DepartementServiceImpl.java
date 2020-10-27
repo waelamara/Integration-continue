@@ -1,7 +1,8 @@
 package tn.esprit.spring.services;
 
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tn.esprit.spring.entities.Departement;
@@ -11,7 +12,7 @@ import java.util.List;
 
 @Service
 public class DepartementServiceImpl implements IDepartementService {
-	private static final Logger l = LogManager.getLogger(IDepartementService.class);
+	private static final Logger l = LogManager.getLogger(DepartementServiceImpl.class);
 
 	@Autowired
 	DepartementRepository deptRepoistory;
