@@ -108,4 +108,10 @@ public class TimesheetPK implements Serializable {
 		return idMission;
 	}
 
+	@Override
+	public String toString() {
+		return "TimesheetPK [idMission=" + idMission + ", idEmploye=" + idEmploye + ", dateDebut=" + dateDebut
+				+ ", dateFin=" + dateFin + "]";
+	}
+	
 }
