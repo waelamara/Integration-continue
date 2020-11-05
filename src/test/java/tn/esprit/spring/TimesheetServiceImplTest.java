@@ -37,14 +37,14 @@ public class TimesheetServiceImplTest {
 	EmployeRepository employeRepository;
 	
 	@Test
-	public void ajouterMission() {
+	public void ajouterMissionTest() {
 		Mission	mission=new Mission("nou","nou");
 		int	missionadd=TimesheetServiceImpl.ajouterMission(mission);
 		assertEquals(mission.getId(), missionadd);
 	}
 	
 	@Test
-	public void affecterMissionADepartement(){
+	public void affecterMissionADepartementTest(){
 	Mission	m1=missionRepository.findById(2).get();
 	Departement d1=departementRepository.findById(1).get();
 	 Mission T1 = TimesheetServiceImpl.affecterMissionADepartement(2, 1);
@@ -53,7 +53,7 @@ public class TimesheetServiceImplTest {
 		
 	}
 	@Test
-	public void ajouterunTimesheet(){
+	public void ajouterunTimesheetTest(){
 		Mission	m1=missionRepository.findById(1).get();
 		Employe e1=employeRepository.findById(3).get();
 		Date dateDebut=new Date();
@@ -67,7 +67,7 @@ public class TimesheetServiceImplTest {
 	}
 	
 	@Test
-	public void validerTimesheet(){
+	public void validerTimesheetTest(){
 		Mission	m1=missionRepository.findById(1).get();
 		Employe validateurId=employeRepository.findById(2).get();
 		Employe e1=employeRepository.findById(3).get();

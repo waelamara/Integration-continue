@@ -17,7 +17,7 @@ public class DepartementServiceImplTest {
 	DepartementServiceImpl DSI;
 	
 	@Test
-	public void getAllDepartements(){
+	public void getAllDepartementsTest(){
 		assertEquals(1,DSI.getAllDepartements().size());
 		
 		
