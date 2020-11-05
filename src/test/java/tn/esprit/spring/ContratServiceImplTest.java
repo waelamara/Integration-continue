@@ -17,7 +17,7 @@ public class ContratServiceImplTest {
 	ContratServiceImpl CSI;
 	
 	@Test
-	public void getAllContratsTest(){
+	public void testgetAllContrats(){
 		assertEquals(1,CSI.getAllContrats().size());
 		
 		

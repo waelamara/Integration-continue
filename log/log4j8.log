@@ -6239,3 +6239,42 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2020-11-05 17:36:38 - INFO  - tn.esprit.spring.services.EntrepriseServiceImpl - In getEntrepriseById where id= 1
 2020-11-05 17:36:38 - INFO  - tn.esprit.spring.services.EntrepriseServiceImpl - Name_enterprise returned :Ste Lassoued
 2020-11-05 17:36:38 - INFO  - tn.esprit.spring.services.EntrepriseServiceImpl - DepartementsNames++++:IT
+2020-11-05 18:10:49 - INFO  - tn.esprit.spring.TimesheetApplicationTests - Starting TimesheetApplicationTests on LAPTOP-G98CQD3G with PID 19744 (started by nouss in C:\Users\nouss\OneDrive\Documents\workspace-sts-3.8.4.RELEASE\integration-continue)
+2020-11-05 18:10:49 - INFO  - tn.esprit.spring.TimesheetApplicationTests - No active profile set, falling back to default profiles: default
+2020-11-05 18:10:51 - INFO  - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-05 18:10:51 - INFO  - org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-11-05 18:10:51 - INFO  - org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-05 18:10:51 - WARN  - o.s.b.a.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-05 18:10:51 - INFO  - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-11-05 18:10:52 - INFO  - o.h.e.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-05 18:10:53 - INFO  - tn.esprit.spring.TimesheetApplicationTests - Started TimesheetApplicationTests in 3.882 seconds (JVM running for 5.577)
+2020-11-05 18:36:07 - INFO  - tn.esprit.spring.TimesheetServiceImplTest - Starting TimesheetServiceImplTest on LAPTOP-G98CQD3G with PID 23864 (started by nouss in C:\Users\nouss\OneDrive\Documents\workspace-sts-3.8.4.RELEASE\integration-continue)
+2020-11-05 18:36:07 - INFO  - tn.esprit.spring.TimesheetServiceImplTest - No active profile set, falling back to default profiles: default
+2020-11-05 18:36:09 - INFO  - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-05 18:36:09 - INFO  - org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-11-05 18:36:09 - INFO  - org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-05 18:36:09 - WARN  - o.s.b.a.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-05 18:36:10 - INFO  - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-11-05 18:36:10 - INFO  - o.h.e.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-05 18:36:11 - INFO  - tn.esprit.spring.TimesheetServiceImplTest - Started TimesheetServiceImplTest in 3.868 seconds (JVM running for 5.514)
+2020-11-05 18:36:11 - WARN  - org.hibernate.persister.entity.AbstractEntityPersister - HHH000502: The [employe] property of the [tn.esprit.spring.entities.Timesheet] entity was modified, but it won't be updated because the property is immutable.
+2020-11-05 18:36:11 - WARN  - org.hibernate.persister.entity.AbstractEntityPersister - HHH000502: The [mission] property of the [tn.esprit.spring.entities.Timesheet] entity was modified, but it won't be updated because the property is immutable.
+2020-11-05 18:36:11 - INFO  - tn.esprit.spring.services.EmployeServiceImpl -  In getNombreEmployeJPQL
+2020-11-05 18:36:11 - INFO  - tn.esprit.spring.services.EmployeServiceImpl -  Out getNombreEmployeJPQL
+2020-11-05 18:36:11 - INFO  - tn.esprit.spring.services.EmployeServiceImpl - In addOrUpdateEmploye
+2020-11-05 18:36:11 - INFO  - tn.esprit.spring.services.EmployeServiceImpl - Out addOrUpdateEmploye
+2020-11-05 18:36:11 - INFO  - tn.esprit.spring.services.EmployeServiceImpl - In getAllEmployes
+2020-11-05 18:36:12 - INFO  - tn.esprit.spring.services.EmployeServiceImpl -  Out getAllEmployes
+2020-11-05 18:36:12 - INFO  - tn.esprit.spring.services.EmployeServiceImpl - In addOrUpdateEmploye
+2020-11-05 18:36:12 - INFO  - tn.esprit.spring.services.EmployeServiceImpl - Out addOrUpdateEmploye
+2020-11-05 18:36:12 - INFO  - tn.esprit.spring.services.EmployeServiceImpl - In mettreAjourEmailByEmployeId
+2020-11-05 18:36:12 - INFO  - tn.esprit.spring.services.EmployeServiceImpl - Out mettreAjourEmailByEmployeId
+2020-11-05 18:36:12 - INFO  - tn.esprit.spring.services.EmployeServiceImpl - In addOrUpdateEmploye
+2020-11-05 18:36:12 - INFO  - tn.esprit.spring.services.EmployeServiceImpl - Out addOrUpdateEmploye
+2020-11-05 18:36:12 - INFO  - tn.esprit.spring.services.EmployeServiceImpl - In getEmployePrenomById where id= 38
+2020-11-05 18:36:12 - INFO  - tn.esprit.spring.services.EmployeServiceImpl - Name_user returned :benamara
+2020-11-05 18:36:12 - INFO  - tn.esprit.spring.services.EntrepriseServiceImpl - In ajouterEntreprise
+2020-11-05 18:36:12 - INFO  - tn.esprit.spring.services.EntrepriseServiceImpl - Out ajouterEntreprise
+2020-11-05 18:36:12 - INFO  - tn.esprit.spring.services.EntrepriseServiceImpl - In getEntrepriseById where id= 1
+2020-11-05 18:36:12 - INFO  - tn.esprit.spring.services.EntrepriseServiceImpl - Name_enterprise returned :Ste Lassoued
+2020-11-05 18:36:12 - INFO  - tn.esprit.spring.services.EntrepriseServiceImpl - DepartementsNames++++:IT

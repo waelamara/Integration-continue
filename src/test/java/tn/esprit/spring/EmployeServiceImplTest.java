@@ -22,26 +22,26 @@ public class EmployeServiceImplTest {
 	IEmployeService iEmployeService;
 
 	@Test
-	public void AddEmployeeTest()throws ParseException {
+	public void testAddEmployee()throws ParseException {
 		Employe emp = new Employe("ben", "amara","benamara.wael@ssiiconsulting.tn", true,Role.INGENIEUR);
 		Employe empAdded = iEmployeService.addOrUpdateEmploye(emp);
 		assertEquals(emp.getEmail(), empAdded.getEmail());
 	}
 
 	@Test
-	public void GetNombreEmployeJPQLTest(){
+	public void testGetNombreEmployeJPQL(){
 		assertNotEquals(0,iEmployeService.getNombreEmployeJPQL());
 	}
 
 	@Test
-	public  void GetEmployePrenomByIdTest(){
+	public  void testGetEmployePrenomById(){
 		Employe emp = new Employe("Wael", "benamara","wael.ben@ssiiconsulting.tn", true,Role.INGENIEUR);
 		Employe empAdded = iEmployeService.addOrUpdateEmploye(emp);
 		assertEquals(empAdded.getPrenom(),iEmployeService.getEmployePrenomById(empAdded.getId()));
 	}
 
 	@Test
-	public void MettreAjourEmailByEmployeIdTest(){
+	public void testMettreAjourEmailByEmployeId(){
 		Employe emp = new Employe("Amin", "rami","rami.ben@ssiiconsulting.tn", true,Role.CHEF_DEPARTMENT);
 		Employe empAdded = iEmployeService.addOrUpdateEmploye(emp);
 		Employe empUpdateted =iEmployeService.mettreAjourEmailByEmployeId("nouveau@email.test",empAdded.getId());
@@ -49,7 +49,7 @@ public class EmployeServiceImplTest {
 	}
 
 	@Test
-	public void GetAllEmployesTest(){
+	public void testGetAllEmployes(){
 		assertNotEquals(0,iEmployeService.getAllEmployes().size());
 	}
 

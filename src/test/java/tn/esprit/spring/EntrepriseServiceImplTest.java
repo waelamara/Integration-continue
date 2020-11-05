@@ -26,19 +26,19 @@ public class EntrepriseServiceImplTest {
 	@Autowired
 	DepartementRepository departementRepository;
 	@Test
-	public void AjouterEntrepriseTest()throws ParseException {
+	public void testAjouterEntreprise()throws ParseException {
 		Entreprise e = new Entreprise("Ste Lassoued", "informatique");
 		int id =entrepriseServiceImpl.ajouterEntreprise(e) ;
 		assertEquals(e.getId(), id);
 	} 
 	@Test
-	public void GetAllDepartementsNamesByEntrepriseTest()throws ParseException  {
+	public void testGetAllDepartementsNamesByEntreprise()throws ParseException  {
 		List<String> listNamesEntreprise = entrepriseServiceImpl.getAllDepartementsNamesByEntreprise(1);
 		// if there are 5 users in DB : 
 		assertEquals(1, listNamesEntreprise.size());
 	}
 	@Test
-	public void GetEntrepriseByIdTest()throws ParseException  {
+	public void testGetEntrepriseById()throws ParseException  {
 		Entreprise e = entrepriseServiceImpl.getEntrepriseById(1);
 		assertEquals(1L, e.getId());
 	}
